@@ -1,0 +1,13 @@
+version: '3.3'
+
+services:
+
+ plugin:
+  build: .
+  ports:
+    - "82:80"
+
+networks:
+  default:
+    external:
+      name: im
